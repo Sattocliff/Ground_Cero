@@ -19,11 +19,12 @@
 
 
   <header>
-    <div class="container" style="background-color: aliceblue;">
+    <div class="container">
       <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid bg-white menu">
-            <a class="navbar-brand text-dark" href="index.html">Inicio</a>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid menu">
+            <a class="navbar-brand fw-bold iniciar" href="index.html"><img src="img/Logo.jpg" class="logotip"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -32,26 +33,102 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link text-dark" aria-current="page" href="nosotros.html">Nosotros</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                 </li>
+                <!--item dropdown-->
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                    aria-expanded="false">Adopta</a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Productos
+                  </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="perritos.html">Perritos</a></li>
-                    <li><a class="dropdown-item" href="gatitos.html">Gatitos</a></li>
-                    <li><a class="dropdown-item" href="adopta.html">Todos</a></li>
+                    <li class="nav-item dropend">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Pinturas
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Todos los artistas</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Esculturas
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Todos los artistas</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Tejidos
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Todos los artistas</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropend">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Cine
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Todos los artistas</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="coolabora.html">Colabora</a>
+                  <a class="nav-link" href="contacto.html">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="servicios.html">Servicios</a>
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link">Inicia Sesión</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="contactanos.html">Contactanos</a>
+                  <a class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-cart" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </a>
                 </li>
+              </ul>
             </div>
           </div>
         </nav>
@@ -60,7 +137,7 @@
   </header>
 
   <main>
-    <div class="container" style="background-color: aliceblue;">
+    <div class="container">
       <div class="container">
         <!--formulario aqui-->
         <h4>Ponte en contacto con nosotros</h4>
@@ -103,10 +180,10 @@
 
 </body>
 <footer>
-  <div class="container" style="background-color: aliceblue;">
+  <div class="container">
     <div class="container">
       <!-- Footer -->
-      <footer class="text-center text-lg-start bg-light text-muted">
+      <footer class="text-center text-lg-start text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <!-- Left -->
@@ -167,11 +244,12 @@
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-3"></i>Ayuda a un Peludo
+                  <i class="fas fa-gem me-3"></i>Grupo Cero
                 </h6>
                 <p>
-                  Si necesitas ayudas o ves a un peludito que necesita
-                  ayuda no dudes en contactarte con nosotros
+                  Disponemos distintos tipos de arte ya sea para compra
+                  como también para su simple admiración, disponemos
+                  de pinturas, esculturas, tejidos e incluso cine.
                 </p>
               </div>
               <!-- Grid column -->
@@ -183,16 +261,16 @@
                   Menus
                 </h6>
                 <p>
-                  <a href="perritos.html" class="text-reset">Perritos</a>
+                  <a href="perritos.html" class="text-reset">Pinturas</a>
                 </p>
                 <p>
-                  <a href="gatitos.html" class="text-reset">Gatitos</a>
+                  <a href="gatitos.html" class="text-reset">Esculturas</a>
                 </p>
                 <p>
-                  <a href="adopta.html" class="text-reset">Todos</a>
+                  <a href="adopta.html" class="text-reset">Cine</a>
                 </p>
                 <p>
-                  <a href="index.html" class="text-reset">Principal</a>
+                  <a href="index.html" class="text-reset">Contactanos</a>
                 </p>
               </div>
               <!-- Grid column -->
@@ -201,23 +279,20 @@
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                  Puedes salvarlos
+                  Trozos de cultura
                 </h6>
                 <p>
-                  <a href="https://www.youtube.com/watch?v=dMyQ0Qr7fnE&ab_channel=ElDodo" class="text-reset">Perrito
-                    rescatado</a>
+                  <a href="https://www.youtube.com/watch?v=dMyQ0Qr7fnE&ab_channel=ElDodo" class="text-reset">A24</a>
                 </p>
                 <p>
-                  <a href="https://www.youtube.com/watch?v=aJA10Ny-yJQ&ab_channel=ElDodo" class="text-reset">Gatita
-                    rescatada</a>
+                  <a href="https://www.youtube.com/watch?v=aJA10Ny-yJQ&ab_channel=ElDodo" class="text-reset">Cuadros</a>
                 </p>
                 <p>
-                  <a href="https://www.youtube.com/watch?v=yimyiMSBbgM&t=7s&ab_channel=ElDodo" class="text-reset">Gata
-                    amorosa</a>
+                  <a href="https://www.youtube.com/watch?v=yimyiMSBbgM&t=7s&ab_channel=ElDodo"
+                    class="text-reset">Exposiciones</a>
                 </p>
                 <p>
-                  <a href="https://www.youtube.com/watch?v=SoUYkqA9sYQ&ab_channel=ElDodo"
-                    class="text-reset">Cachorrita</a>
+                  <a href="https://www.youtube.com/watch?v=SoUYkqA9sYQ&ab_channel=ElDodo" class="text-reset">El arte</a>
                 </p>
               </div>
               <!-- Grid column -->
@@ -229,7 +304,7 @@
                 <p><i class="fas fa-home me-3"></i> Providencia, Santiago, Chile</p>
                 <p>
                   <i class="fas fa-envelope me-3"></i>
-                  Ayuda.peludo@gmail.com
+                  Grupo.ceroPlusArte@gmail.com
                 </p>
                 <p><i class="fas fa-phone me-3"></i> +56957887152</p>
                 <p><i class="fas fa-print me-3"></i> +56988552365</p>
@@ -250,6 +325,7 @@
       </footer>
       <!-- Footer -->
     </div>
+
   </div>
 </footer>
 

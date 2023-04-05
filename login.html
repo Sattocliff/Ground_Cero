@@ -10,172 +10,122 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
 
     <header>
-        <div class="container">
-            <div class="container">
-
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="container-fluid menu">
-                        <a class="navbar-brand fw-bold iniciar" href="index.html"><img src="img/Logo.jpg"
-                                class="logotip"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                                </li>
-                                <!--item dropdown-->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Productos
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item dropend">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                Pinturas
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="VanGogh.html">Vincent Van Gogh</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="Picasso.html">Pablo Picasso</a></li>
-                                                <li><a class="dropdown-item" href="klimt.html">Gustav Klimt</a></li>
-                                                <li><a class="dropdown-item" href="dali.html">Salvador Dali</a>
-                                                </li>
-                                                <li>
-                                                    <hr class="dropdown-divider">
-                                                </li>
-                                                <li><a class="dropdown-item" href="todos.html">Todos los artistas</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropend">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                Esculturas
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="escultura.html">Todas las
-                                                        esculturas</a></li>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropend">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Cine
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="cine.html">Estudio a24</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contactanos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                            </li>
-                            </ul>
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-light" type="submit">Buscar</button>
-                            </form>
-                            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link"><button onclick="login()"
-                                            style="background-color: rgba(0, 0, 0, 0.05);">Inicia Sesión</button></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
 
     </header>
 
     <main>
         <div class="container">
             <div class="container">
+                <div class="fondoso">
+                    <section class="vh-100">
+                        <div class="container-fluid h-custom">
+                            <div class="row d-flex justify-content-center align-items-center h-100">
+                                <div class="col-md-9 col-lg-6 col-xl-5">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                                        class="img-fluid" alt="Sample image">
+                                </div>
+                                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                                    <form>
+                                        <div
+                                            class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                                            <p class="lead fw-normal mb-0 me-3" style="color: aliceblue;">Inicia Sesion</p>
+                                            <button type="button" class="btn btn-primary btn-floating mx-1">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </button>
 
-                <div class="card mb-3" style="max-width: 100%; background-color: rgba(0, 0, 0, 0.05);">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <img src="img/Vincent Van Gogh/Almendro en flor.jpg" style="width: 100%;"
-                                class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title" style="background-color: rgba(0, 0, 0, 0.05);color:aliceblue">
-                                    Almendro en flor</h5>
-                                <p class="card-text" style="background-color: rgba(0, 0, 0, 0.05);color:aliceblue">Obra
-                                    reconocida del pintor Vincent Van Gogh</p>
+                                            <button type="button" class="btn btn-primary btn-floating mx-1">
+                                                <i class="fab fa-twitter"></i>
+                                            </button>
+
+                                            <button type="button" class="btn btn-primary btn-floating mx-1">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </button>
+                                        </div>
+
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+
+                                        <!-- Email input -->
+                                        <div class="form-outline mb-4">
+                                            <input type="email" id="form3Example3" class="form-control form-control-lg"
+                                                placeholder="micorreo@gmail.com" />
+                                            <label class="form-label" for="form3Example3">Correo</label>
+                                        </div>
+
+                                        <!-- Password input -->
+                                        <div class="form-outline mb-3">
+                                            <input type="password" id="form3Example4"
+                                                class="form-control form-control-lg" placeholder="Ingresa contraseña" />
+                                            <label class="form-label" for="form3Example4">contraseña</label>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <!-- Checkbox -->
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input me-2" type="checkbox" value=""
+                                                    id="form2Example3" />
+                                                <label class="form-check-label" for="form2Example3">
+                                                    Recuerdame
+                                                </label>
+                                            </div>
+                                            <a href="#!" class="text-body">Olvidaste tu contraseña?</a>
+                                        </div>
+
+                                        <div class="text-center text-lg-start mt-4 pt-2">
+                                            <button type="button" class="btn btn-primary btn-lg" onclick="sale()"
+                                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Iniciar</button>
+                                            <p class="small fw-bold mt-2 pt-1 mb-0">No tienes cuenta?<a href="#!"
+                                                    class="link-danger"><button onclick="registra()">Registrarse</button></a></p>
+                                        </div>
+
+                                    </form>
+                                </div>
                             </div>
-                            <ul class="list-group list-group-flush" style="background-color: rgba(0, 0, 0, 0.05);">
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05);color:aliceblue">Disponible para mirar
-                                    en nuestra sala de exhibicion</li>
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05);color:aliceblue">¿Salidas de negocios?
-                                </li>
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05);color:aliceblue">¿cultura general?>
-                                </li>
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05); color:aliceblue">¿Pasatiempo cultural
-                                    y familiar?</li>
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05); color:aliceblue">
-                                    <h5>Puedes pasar a nuestra sala</h5>
-                                </li>
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05); color:aliceblue">Ubicación:
-                                    Providencia #5968</li>
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05); color:aliceblue">Region: Metropolitana
-                                </li>
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05); color:aliceblue">Telefono:
-                                    +56957887152</li>
-                                <li class="list-group-item"
-                                    style="background-color: rgba(0, 0, 0, 0.05); color:aliceblue">Ven a visitarnos!
-                                </li>
-                            </ul>
                         </div>
-                    </div>
+                        <div
+                            class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+                            <!-- Copyright -->
+                            <div class="text-white mb-3 mb-md-0">
+                                Copyright © 2020. All rights reserved.
+                            </div>
+                            <!-- Copyright -->
+
+                            <!-- Right -->
+                            <div>
+                                <a href="#!" class="text-white me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#!" class="text-white me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#!" class="text-white me-4">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#!" class="text-white">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <!-- Right -->
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
     </main>
 
 </body>
+
 <footer>
     <div class="container">
         <div class="container">
@@ -328,5 +278,4 @@
 
     </div>
 </footer>
-
 </html>
